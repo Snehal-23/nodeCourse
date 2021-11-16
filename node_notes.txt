@@ -1,0 +1,30 @@
+Node JS course:
+1.REPL: Read Eval Print Loop
+-----------------------------
+2.JS refresher:
+Weakly typed :  No explicit assignement.
+		Data types can be switched dynamically
+OOL :Object oriented language
+#To understand data types in JS: 
+https://academind.com/tutorials/reference-vs-primitive-values
+#To undertsand more about this
+https://academind.com/tutorials/this-keyword-function-references
+#Spread operator: [...hobbies] = all the elements of existing array
+#Rest operator:(...args) = To apply n unknown number of elements
+-------------------------------
+3.Node basics
+#core modules : 
+	http:launch server/send request
+ 	https:SSL server
+ 	fs(filesystem): read and write file
+	os, path, url
+#Server creation:
+1.Import http- const http = require("http");
+2.Create server by providing request listener to create server method
+  -const server = http.createServer((req, res) => {console.log(req)}); 
+3.Listen for request on server- server.listen()
+  server.listen(port?: number, hostname?: string, backlog?: number, listeningListener?: () => void)
+# Node uses event-driven approach
+single thereaded js
+# To disconnect server = process.exit()
+# To set response header = response.setHeader('content-type','text/html')
